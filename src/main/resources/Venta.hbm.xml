@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+ 3: <hibernate-mapping>
+ 4:   <class name="Entyties.Venta" >
+ 5:     <id column="iv_venta" name="id" type="integer"/>
+ 6:     <property name="fecha" />
+ 7:     <property name="total" />
+ 9:
+10:     <list name="detalle_venta"  cascade="all" inverse="false"  >
+11:         <key>
+12:             <column name="id_venta"  />
+13:         </key>
+14:         <list-index>
+15:             <column name="Idx"  />
+16:         </list-index>
+17:         <one-to-many class="Entyties.Detalle_Venta" />
+18:     </list>
+19:   </class>
+20: </hibernate-mapping>
+
+<root>
+    
+</root>
+

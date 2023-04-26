@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/XML/XMLDocument.xml to edit this template
+-->
+ <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+ 3: <hibernate-mapping>
+ 4:   <class name="Entyties.Detalle_Venta" >
+ 5:     <id column="id_detalle_venta" name="idDetalle" type="integer"/>
+ 6:     <property name="direccionCorreo" />
+ 7:
+ 8:
+ 9:     <many-to-one name="profesor">
+10:             <column name="idProfesor"  />
+11:     </many-to-one>
+12:
+13:
+14:   </class>
+15: </hibernate-mapping>
+
+
+<root>
+    
+</root>
+
